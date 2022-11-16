@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="../assets/images/logo.ico">
     <link
       href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald&family=Permanent+Marker&display=swap"
@@ -61,6 +59,15 @@
           <button id="contactanos" class="btn-link">Whatsapp</button>
         </a></div>
       </p>
+    </div>
+    <div>
+      <form onsubmit="retornarDatos()" id="formulario-work-with-us">
+        <h1 id="h1-formulario">ESCRIBE TUS DATOS</h1>
+        <input type="text" name="nombre" id="nombre" class="elemento" placeholder="Nombre" required>
+        <input type="text" name="telefono" id="telefono" class="elemento" placeholder="Teléfono" required minlength="5">
+        <input type="email" name="email" id="email" class="elemento" placeholder="Email" required minlength="10">
+        <input type="submit" value="Enviar" id="submit" >
+      </form>
     </div>
   </body>
   <footer>
