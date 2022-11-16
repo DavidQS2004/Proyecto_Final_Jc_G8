@@ -18,6 +18,9 @@ a {
   font-family: "Alfa Slab One", cursive;
   color: #f3f3f3;
 }
+.content {
+  scroll-margin-top: 20ex;
+}
 
 body {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../images/background.jpg);
@@ -25,11 +28,15 @@ body {
   background-size:cover;
   background-attachment:fixed;
   background-position: center;
-  opacity: 95%;
+  opacity: 85%;
   scroll-behavior: smooth;
 }
 header {
   background-color: #00476a;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 footer {
   background-color: #00476a;
@@ -151,6 +158,9 @@ border-radius: 10px;
   .btn-link {
     padding: 2%;
     margin: 0;
+  }
+  .content {
+    scroll-margin-top: 7ex;
   }
   p {
     font-size: 16px;
