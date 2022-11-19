@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-la">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/styles.css" />
     <link rel="icon" href="../assets/images/logo.ico">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald&family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
-    <title>TRABAJA CON NOSOTROS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>WORK ZONE</title>
   </head>
   <header>
     <div id="contenedor-nav">
-      <img src="../assets/images/logo.ico" alt="logo" id="logo">
+      <a><img src="../assets/images/logo.ico" alt="logo" id="logo"></a>
       <a href="#inicio-cont" id="inicio">
         <button class="btn-link">INICIO</button>
       </a>
@@ -27,51 +26,38 @@
   <body>
     
     <div class="content" id="inicio-cont">
-      <h1>INICIO</h1>
+      <h1 class="titulos" id="inicio">INICIO</h1>
       <p>
-        INICIO Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-        aliquid adipisci perspiciatis, eos dolore explicabo velit earum
-        accusantium illo doloribus. Unde debitis earum et quasi itaque, ab
-        laboriosam consectetur officia?
+       ¡BIENVENIDO(A) A WORK ZONE!, donde podrás aplicar de manera fácil y rápida a diversas vacantes laborales que se adapten a tu perfíl profesional. Esta página te ayudará a difundir tu hoja de vida a diferentes empresas, comercios y establecimientos que estén en la búsqueda de personas como tú para que hagas parte de su equipo de trabajo.
       </p>
     </div>
 
     <div class="content" id="quienes-somos">
-      <h1 id="titulo-quienes-somos">¿QUIÉNES SOMOS?</h1>
+      <h1 id="titulo-quienes-somos" class="titulos">¿QUIÉNES SOMOS?</h1>
       <p id="parrafo-quienes-somos">
-        QUIÉNES SOMOS Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Tempore, ex cupiditate beatae veniam quas distinctio magnam consectetur
-        hic ipsum fugit libero porro adipisci. Accusamus quos, sapiente est odit
-        porro deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Nihil omnis beatae mollitia sequi porro amet in? Sed, quia minima
-        debitis voluptates nostrum incidunt perferendis fugit cumque, et
-        voluptatem, blanditiis error.
+        Somos una corporación fundamentada en establecer una cohesión adecuada entre complementos laborales de manera bilateral con el fin de lograr una buena relación, idoneidad y profesionalismo entre funcionarios y empresas, permitiendo que ambas partes tengan un crecimiento laboral y de conocimientos que los impulsará en el ámbito empresarial, profesional y económico.
       </p>
     </div>
     <div class="content" id="contacto">
-      <h1>CONTACTO</h1>
-      <p>
-        CONTACTO Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Corporis minus harum hic aspernatur veniam et quaerat pariatur maiores
-        itaque! Vero at, laudantium illo velit ea est iure quidem reprehenderit
-        impedit.
-        <div id="wpp-contacto"><a href="https://www.whatsapp.com" target="_blank">
+      <h1 class="titulos">CONTACTO</h1>
+      <p id="parrafo-contacto">Si estás interesado en darte a conocer profesionalmente y encontrar el trabajo adecuado para tí puedes contactarnos a través de nuestro correo <strong>contactoworkzone72@gmail.com</strong>, nuestro whatsapp o puedes llenar el formulario que se encuentra en la parte inferior de esta página.
+        <div id="wpp-contacto">
+          <a href="https://api.whatsapp.com/send?phone=573028455818&text=WORK%20ZONE.%20%C2%A1Aplica%20aqu%C3%AD!" target="_blank">
           <button id="contactanos" class="btn-link">Whatsapp</button>
         </a></div>
       </p>
     </div>
     <div>
-      <form onsubmit="retornarDatos()"
-      id="formulario-work-with-us">
+      <form id="formulario-work-with-us" onsubmit="retornarDatos()" >
         <h1 id="h1-formulario">ESCRIBE TUS DATOS</h1>
         <input type="text" name="nombre" id="nombre" class="elemento" placeholder="Nombre" required>
-        <input type="text" name="telefono" id="telefono" class="elemento" placeholder="Teléfono" required minlength="5">
+        <input type="tel" name="telefono" id="telefono" class="elemento" placeholder="Teléfono" required minlength="10">
         <input type="email" name="email" id="email" class="elemento" placeholder="Email" required minlength="10">
-        <input type="submit" value="Enviar" id="submit" >
+        <input type="text" name ="descripcion" id="descripcion" class="elemento" placeholder="Descripción" required minlength="30">
+        <input type="submit" id="submit" >
       </form>
     </div>
-    
-  <script src="../assets/script/app.js"></script>
+  <script type="text/javascript" src="../assets/script/main.js"></script>
   </body>
   <footer>
     
@@ -79,8 +65,7 @@
     <div id="contactos">
       <a
         id="facebook-logo"
-        href="https://es-la.facebook.com
-"
+        href="https://www.facebook.com/profile.php?id=100087803087416"
         target="_blank"
         ><img
           src="../assets/images/facebook.png"
@@ -88,14 +73,14 @@
           class="logos"
       /></a>
       <a id="twitter-logo"
-        href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"
+        href="https://twitter.com/TrabajaConNoso5"
         target="_blank"
         ><img
           src="../assets/images/twitter.png"
           alt="twitter"
           class="logos"
       /></a>
-      <a id="youtube-logo" href="https://www.youtube.com" target="_blank"
+      <a id="youtube-logo" href="https://www.youtube.com/channel/UCQMrSfHYEisCJs4wXE8DHjw" target="_blank"
         ><img
           src="../assets/images/youtube.png"
           alt="youtube"
